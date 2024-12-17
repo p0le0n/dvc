@@ -1,0 +1,19 @@
+stages:
+  eda:
+    cmd: python src/eda.py
+    deps:
+      - src/eda.py
+      - data/Iris.csv
+    outs:
+      - plots/pairplot.png
+      - plots/correlation_matrix.png
+
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - data/Iris.csv
+    outs:
+      - models/iris_model.pkl
+    metrics:
+      - metrics.json
