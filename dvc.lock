@@ -9,17 +9,17 @@ stages:
       size: 5107
     - path: src/eda.py
       hash: md5
-      md5: b767973a9982d7fd602c231c9b269cc9
-      size: 937
+      md5: 752e7b577ef9d9f13d55eef039c8b064
+      size: 1348
     outs:
     - path: plots/correlation_matrix.png
       hash: md5
-      md5: ba4c7b8ede91efb46c54441a402ccfab
-      size: 42171
+      md5: fa9b1742b3d929e2c1c8b4fc767576e0
+      size: 62807
     - path: plots/pairplot.png
       hash: md5
-      md5: 9901399e6e9ea59ba8ed366c35324767
-      size: 425643
+      md5: 15c7ef18ce7f96e39de1bc96369033eb
+      size: 801275
   train:
     cmd: python src/train.py
     deps:
@@ -29,8 +29,8 @@ stages:
       size: 5107
     - path: src/train.py
       hash: md5
-      md5: bd979a40771ada6e647000b67679dd1d
-      size: 1211
+      md5: 0ffbf2990be95be100a6aa364b5d7a5f
+      size: 1219
     outs:
     - path: metrics.json
       hash: md5
@@ -38,5 +38,5 @@ stages:
       size: 17
     - path: models/iris_model.pkl
       hash: md5
-      md5: 99a9c9e521fb87a8c922d1a14a5f9dc9
-      size: 123073
+      md5: 3466c2a4ab6d7c705ab25c282863d574
+      size: 127857

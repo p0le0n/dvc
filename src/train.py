@@ -33,4 +33,4 @@ def train_model(input_path: str, metrics_path: str, model_path: str):
     print("Model and metrics saved.")
 
 if __name__ == "__main__":
-    train_model("data/Iris.csv", "metrics.json", "models/iris_model.pkl")
+    train_model("data/Iris_processed.csv", "metrics.json", "models/iris_model.pkl")
